@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .7em 1em;
+    align-items: center;
+    background: #253858;
+    width: 100%;
+    height: 7vh;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand:active {
+    text-decoration: none;
+
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    padding: 0 .3em;
+    list-style-type: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f3f3f3;
+}
+
+
+
+footer {
+    background: #000;
+    color: #f3f3f3;
+    height: 10vh;
+    padding: .5em;
+    width: 100%;
+}
+
+.banner {
+    background: url("/img/lion.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    padding: 0 2em;
+}
+
+.banner>h1 {
+    color: #fff;
+    margin-bottom: .8rem;
+    position: relative;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.banner>p {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__section {
+    width: 65%;
+    flex: 0 0 auto;
+    padding: 0 .5em;
+    text-align: left;
+}
+
+.about__img {
+    object-fit: cover;
+}
+
+.banner__img {
+    background: url("/img/lion.jpg");
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.endangered {
+    color: red !important;
+}
+
+.animal__area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+
+}
+
+.animal__card {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.animal__image {
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.animal__content {
+    padding: 1em;
+}
+
+.animal__tagline {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding: 0 0 0.5em 0;
+}
+
+.animal__class--endangered {
+    margin-right: 0.5em;
+    padding: 0.3em 0.5em;
+    background: #e10000;
+    border-radius: 0.3em;
+    color: #fff;
+    font-size: 0.75em;
+}
+
+.animal__description {
+    margin: 0;
+    font-size: 15px;
+}
+
+.animal__cta {
+    color: white;
+    text-decoration: none;
+    padding: 0.2em 1em;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.animal__cta.delete {
+    background: #e10000;
+    color: white;
+}
+
+.animal__cta.edit {
+    background: #1e3e71;
+    color: white;
+}
+
+.animal_cta:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create__form {
+    width: 50%;
+}
+
+.form__description {
+    width: 100%;
+    height: 25vh;
+}
+
+label {
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+    border: none;
+}
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+[type='checkbox'],
+[type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+
+
+[type='search'] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+.form__input {
+    height: 35px;
+    outline: none;
+    padding: .3em .5em;
+    font-size: 1em;
+}
+
+/* margin -top and bottom */
+.my-1 {
+    margin: 1em 0;
+}
+
+.my-2 {
+    margin: 2em 0;
+}
+
+.my-3 {
+    margin: 3em 0;
+}
+
+.my-4 {
+    margin: 4em 0;
+}
+
+.my-5 {
+    margin: 5em 0;
+}
+
+/* margin top */
+.mt-1 {
+    margin-top: 1em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+.mt-4 {
+    margin-top: 4em;
+}
+
+.mt-5 {
+    margin-top: 5em;
+}
+
+/* margin bottom */
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+.mb-3 {
+    margin-bottom: 3em;
+}
+
+.mb-4 {
+    margin-bottom: 4em;
+}
+
+.mb-5 {
+    margin-bottom: 5em;
+}
+
+/* margin left */
+.ml-1 {
+    margin-left: 1em;
+}
+
+.ml-2 {
+    margin-left: 2em;
+}
+
+.ml-3 {
+    margin-left: 3em;
+}
+
+.ml-4 {
+    margin-left: 4em;
+}
+
+.ml-5 {
+    margin-left: 5em;
+}
+
+/* margin-right */
+.mr-1 {
+    margin-right: 1em;
+}
+
+.mr-2 {
+    margin-right: 2em;
+}
+
+.mr-3 {
+    margin-right: 3em;
+}
+
+.mr-4 {
+    margin-right: 4em;
+}
+
+.mr-5 {
+    margin-right: 5em;
+}
+
+.mx-1 {
+    margin: 0 1em;
+}
+
+/* padding */
+
+.px-1 {
+    padding: 0 1em;
+}
+
+.px-2 {
+    padding: 0 2em;
+}
+
+.px-3 {
+    padding: 0 3em;
+}
+
+.px-4 {
+    padding: 0 4em;
+}
+
+.px-5 {
+    padding: 0 5em;
+}
+
+/* padding top and bottom */
+.py-1 {
+    padding: 1em 0;
+}
+
+.py-2 {
+    padding: 2em 0;
+}
+
+.py-3 {
+    padding: 3em 0;
+}
+
+.py-4 {
+    padding: 4em 0;
+}
+
+.py-5 {
+    padding: 5em 0;
+}
+
+/* padding left */
+.pl-1 {
+    padding-left: 1em;
+}
+
+.pl-2 {
+    padding-left: 2em;
+}
+
+.pl-3 {
+    padding-left: 3em;
+}
+
+.pl-4 {
+    padding-left: 4em;
+}
+
+.pl-5 {
+    padding-left: 5em;
+}
+
+/* padding right */
+.pr-1 {
+    padding-right: 1em;
+}
+
+.pr-2 {
+    padding-right: 2em;
+}
+
+.pr-3 {
+    padding-right: 3em;
+}
+
+.pr-4 {
+    padding-right: 4em;
+}
+
+.pr-5 {
+    padding-right: 5em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+
+}
+
+.view__img {
+    width: 100%;
+
+}
+
+.align-center {
+    align-self: center;
+}
+
+.no__animals {
+    height: 50vh;
+}
+
+.form__container {
+    height: 100vh;
+}
+
+
+/* Media   queries */
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .about__section {
+        width: 100%;
+    }
+
+    .animal__area {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .px-4 {
+        padding: .4em;
+    }
+
+    .create__form {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+}
