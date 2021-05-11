@@ -1,0 +1,31 @@
+<%- include("../partials/_header") -%>
+
+<main>
+    <section>
+        <div class="px-4 form__container flex-column">
+            <%- include("../partials/_messages") -%>
+            <div>
+                <h4 class="text-center">
+                    Register
+                </h4>
+            </div>
+            <form class="create__form" action="/api/auth/users/register" method="POST">
+                <div class="flex-column mb-1">
+                    <label for="name">Email</label>
+                    <input type="email" id="email" name="email" placeholder="123@gmail.com" class="form__input"
+                        autocomplete="false" />
+                </div>
+                <div class="flex-column mb-1">
+                    <label for="name">Password</label>
+                    <input type="password" id="password" name="password" class="form__input" autocomplete="false" />
+                </div>
+                <p>Already have an account , <a href="/login">Login</a></p>
+                <div>
+                    <button class="animal__cta edit" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<%- include("../partials/_footer") -%>

@@ -1,0 +1,54 @@
+<%- include("./partials/_header") -%>
+
+<main>
+    <section class="my-2">
+        <%- include("./partials/_messages") -%>
+        <div>
+            <h4 class="text-center">
+                Create Animal
+            </h4>
+        </div>
+        <div class="px-4 form__container">
+            <form class="create__form" role="form" method="post" action="/api/animals" enctype="multipart/form-data">
+                <div class="flex-column mb-1">
+                    <label for="name">Animal Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Animal Name" class="form__input" />
+                </div>
+                <div class="flex-column mb-1">
+                    <label for="upload">Upload Animal Image</label>
+                    <input type="file" id="upload" name="upload" />
+                </div>
+                <div class="flex-column mb-1">
+                    <label for="upload">Place Found</label>
+                    <select name="location">
+                        <% for(var i = 0;i <location.length;i++){%>
+                        <option label="<%= location[i].location %> " value="<%= location[i].id %>">
+                            <%= location[i].location%></option>
+                        <%}%>
+                    </select>
+                </div>
+                <div class="flex-column mb-1">
+                    <h3>Endangered</h3>
+                    <div>
+                        <input type="radio" id="true" name="endangered" value="true">
+                        <label for="true">True</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="false" name="endangered" value="false">
+                        <label for="false">False</label><br>
+                    </div>
+
+                </div>
+                <div class="mb-1">
+                    <textarea class="form__description" name="description">
+                    </textarea>
+                </div>
+                <div>
+                    <button class="animal__cta edit">Create</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<%- include("./partials/_footer") -%>
